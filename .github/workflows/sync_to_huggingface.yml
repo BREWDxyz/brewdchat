@@ -1,0 +1,22 @@
+name: Sync to Hugging Face Space
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Push to Hugging Face Space
+      env:
+        HF_TOKEN: ${{ secrets.HUGGINGFACE_TOKEN }}
+      run: |
+        git config --global user.email "dad@brewd.xyz"
+        git config --global user.name "BREWDdad"
+        git remote set-url origin https://huggingface.co/spaces/brewdxyz/brewdchat
+        echo $HF_TOKEN | git push --all
