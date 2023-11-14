@@ -1,8 +1,8 @@
 ---
 title: "BREWDchat"
 emoji: "💬"
-colorFrom: "white"
-colorTo: "black"
+colorFrom: "indigo"
+colorTo: "gray"
 sdk: "docker"
 suggested_hardware: "cpu-upgrade"
 suggested_storage: "medium"
