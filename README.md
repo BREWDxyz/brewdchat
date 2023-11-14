@@ -3,7 +3,7 @@ title: BREWDchat
 emoji: 💬
 colorFrom: blue
 colorTo: green
-sdk: "docker"
+sdk: docker
 app_port: 7860
 base_path: "/"
 fullWidth: true
