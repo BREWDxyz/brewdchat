@@ -37,8 +37,7 @@ COPY --from=build /app/next.config.js ./next.config.js
 COPY --from=build /app/next-i18next.config.js ./next-i18next.config.js
 
 # Expose the port the app will run on
-# Change this to 7860 if you want to align with Hugging Face's default exposed port
-EXPOSE 7860
+EXPOSE 3000
 
 # Start the application
 CMD ["npm", "start"]
