@@ -1,18 +1,13 @@
 ---
-title: "BREWDchat"
-emoji: "💬"
-colorFrom: "indigo"
-colorTo: "gray"
+title: BREWDchat
+emoji: 💬
+colorFrom: 
+colorTo: green
 sdk: "docker"
-suggested_hardware: "cpu-upgrade"
-suggested_storage: "medium"
-app_port: 3000
+app_port: 7860
 base_path: "/"
 fullWidth: true
-models: ["all-current-openai-models"]
-datasets: []
-tags: ["chatbot", "AI", "OpenAI", "GPT"]
-pinned: true
+pinned: false
 hf_oauth: false
 disable_embedding: false
 ---
